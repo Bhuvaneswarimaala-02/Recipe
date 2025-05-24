@@ -17,8 +17,11 @@
    MySQL table setup through CLI
 
    > mysql -u root -p
+   
    > CREATE DATABASE recipe_db;
+   
    > USE recipe_db;
+   
    > CREATE TABLE recipes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     cuisine VARCHAR(255),
@@ -31,9 +34,10 @@
     nutrients JSON,
     serves VARCHAR(255)
     );
+   
    > DESCRIBE recipes;
 
-![image](https://github.com/user-attachments/assets/f8464221-ab52-4aca-8cdf-a60826228d2c)
+   ![image](https://github.com/user-attachments/assets/f8464221-ab52-4aca-8cdf-a60826228d2c)
 
 
 4. Create the backend folder and file structures.
@@ -63,13 +67,13 @@
    - ENDPOINT 2: 127.0.0.1:8000/api/recipes?page=1&limit=10 (shows data in paginated fashion with customizable limit)
    - ENDPOINT 3: 127.0.0.1:8000/api/recipes?calories=<=400&&title=pie&rating=>=4.5 (shows filtered items, filters - based on any field)
    - ENDPOINT 4: 127.0.0.1:8000/api/recipes?calories<=450&&pages=1&limit=15 (shows filtered items with pagination)
-  ![image](https://github.com/user-attachments/assets/d9b8f7e2-50ba-4871-9702-4ab945179bce)
+     ![image](https://github.com/user-attachments/assets/d9b8f7e2-50ba-4871-9702-4ab945179bce)
 
-  ![image](https://github.com/user-attachments/assets/9673a002-0092-454d-a7ad-dc0e2b2cf313)
+     ![image](https://github.com/user-attachments/assets/9673a002-0092-454d-a7ad-dc0e2b2cf313)
 
-  ![image](https://github.com/user-attachments/assets/c4f3846b-d143-49a4-bb32-57eb8fed16a0)
+     ![image](https://github.com/user-attachments/assets/c4f3846b-d143-49a4-bb32-57eb8fed16a0)
 
-  ![image](https://github.com/user-attachments/assets/c8d5952e-35ff-4ac5-8144-6ce36d3db7e9)
+     ![image](https://github.com/user-attachments/assets/c8d5952e-35ff-4ac5-8144-6ce36d3db7e9)
 
 6. Create a frontend folder - React+Vite
 
@@ -94,7 +98,4 @@
 
    ![image](https://github.com/user-attachments/assets/01b3e73b-2d7b-4527-bdc4-da1f0154ec02)
 
-
-# 📄 Documentation
-
-[Download Project Guide (Word)](docs/Complete_Documentation.docx)
+# THANKYOU
