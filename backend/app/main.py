@@ -8,7 +8,8 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  
+    # allow_origins=["http://localhost:5173"],  
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -28,7 +29,7 @@ def get_db_connection():
 
 @app.get("/")
 def hello():
-    return "WORKING"
+    return {"message":"WORKING"}
 
 # API Endpoint 1: Get All Recipes(pagination and Sorted - based on rating)
 @app.get("/api/recipes")
