@@ -5,7 +5,7 @@ import mysql.connector
 connection = mysql.connector.connect(
     host="localhost",       
     user="root",   # replace with MySQL username
-    password="Bhuvan24",  # replace with MySQL password
+    password="",  # Add MySQL password
     database="recipe_db"  # replace with database name
 )
 
